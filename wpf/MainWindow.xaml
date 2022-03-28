@@ -1,0 +1,22 @@
+﻿<Window x:Class="wpf.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:wpf"
+        mc:Ignorable="d"
+        Title="Forma">
+    <Grid Height="450" Width="800">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Label Content="Atkodavimas" Margin="0,201,468,207" HorizontalAlignment="Right" Width="79"/>
+        <Button Name="btnEncrypt" Content="Uzkoduoti" Margin="0,234,372,178" HorizontalAlignment="Right" Width="134" Click="btnEncrypt_Click"/>
+        <TextBox x:Name="txtValue" TextWrapping="Wrap" Margin="0,150,263,277" HorizontalAlignment="Right" Width="208"/>
+        <Label Content="Uzkodavimas" Margin="0,174,468,232" HorizontalAlignment="Right" Width="82"/>
+        <Label Content="Tekstas" Margin="283,146,449,260"/>
+        <TextBox x:Name="txtDecrypt" TextWrapping="Wrap" Margin="0,206,263,221" HorizontalAlignment="Right" Width="208"/>
+        <TextBox x:Name="txtEncrypt" TextWrapping="Wrap" Margin="0,178,263,249" HorizontalAlignment="Right" Width="208"/>
+        <Button Name="btnDecrypt" Content="Atkoduoti" Margin="0,234,233,178" HorizontalAlignment="Right" Width="134" Click="btnDecrypt_Click"/>
+    </Grid>
+</Window>
